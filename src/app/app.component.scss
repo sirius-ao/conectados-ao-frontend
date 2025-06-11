@@ -1,6 +1,13 @@
-:host{
-    display: grid;
-    grid-template-rows: 80px auto;
-    height: 100vh;
+
+:host {
+  display: grid;
+  grid-template-rows: 80px auto;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  main {
     box-sizing: border-box;
+    background-color: #f4f4f4;
+  }
 }
