@@ -1,0 +1,35 @@
+<div class="menu">
+  <button class="" routerLinkActive="router-link-active">
+    <ng-icon
+      hlm
+      name="lucideArchive"
+      strokeWidth="1.8px"
+      [color]="activeColor"
+    />
+    <p class="pButton active">Archives</p>
+  </button>
+
+  <button>
+    <ng-icon hlm name="lucideChartBar" strokeWidth="1.8px" color="#404040" />
+    <p class="pButton">Graphics</p>
+  </button>
+
+  <button>
+    <ng-icon hlm name="lucideSettings" strokeWidth="1.8px" color="#404040" />
+    <p class="pButton">Settings</p>
+  </button>
+
+  <button>
+    <ng-icon hlm name="lucideChartBar" strokeWidth="1.8px" color="#404040" />
+    <p class="pButton">Graphics</p>
+  </button>
+</div>
+
+<div class="subMenu" [ngClass]="asideState">
+  <ul [ngClass]="" class="gap-3 flex flex-col pl-6 pt-8">
+    <li class="subLinkActive pButton">Archive Grap.</li>
+    <li class="pButton" >Archive Settings</li>
+    <li class="pButton">Archive users</li>
+    <li class="pButton">Archive Menu</li>
+  </ul>
+</div>
