@@ -1,5 +1,5 @@
 <div class="menu">
-  <button class="" routerLinkActive="router-link-active">
+  <button class="" routerLinkActive="router-link-active" (click)="changeAsideState()">
     <ng-icon
       hlm
       name="lucideArchive"
@@ -27,8 +27,9 @@
 
 <div class="subMenu" [ngClass]="asideState">
   <ul [ngClass]="" class="gap-3 flex flex-col pl-6 pt-8">
-    <li class="subLinkActive pButton">Archive Grap.</li>
-    <li class="pButton" >Archive Settings</li>
+    <li class="pButton cursor-pointer" routerLink="archives/home" routerLinkActive="subLinkActive">Archive Grap.</li>
+    <li class="pButton cursor-pointer" routerLink="archives/about" routerLinkActive="subLinkActive">Archive Settings</li>
+
     <li class="pButton">Archive users</li>
     <li class="pButton">Archive Menu</li>
   </ul>

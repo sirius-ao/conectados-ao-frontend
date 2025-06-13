@@ -9,7 +9,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-aside-bar',
-  imports: [CommonModule, HlmIconDirective, NgIcon, RouterLinkActive],
+  imports: [CommonModule, HlmIconDirective, NgIcon, RouterLinkActive, RouterLink],
   templateUrl: './aside-bar.component.html',
   styleUrl: './aside-bar.component.scss',
   providers: [provideIcons({lucideArchive, lucideChartBar, lucideSettings})]
@@ -24,6 +24,10 @@ export class AsideBarComponent implements OnInit {
   ) {}
 
   protected asideState: 'showSubMenu' | 'hideSubMenu' = 'hideSubMenu';
+
+  changeAsideState(){
+    this._ControllerAsideBarState.hasClink()
+  }
 
   ngOnInit() {
     this._ControllerAsideBarState.controllerAsideBarState.subscribe((data) => {
