@@ -1,0 +1,29 @@
+:host{
+    width: 100%;
+    margin: 0;
+    padding: 0 24px;
+    box-shadow: 0px 0px 5px #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    z-index: 100;
+
+    .container-icon{
+        background-color: red;
+        align-items: center;
+    }
+
+    .iconUser{
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+
+        outline: none;
+        border: none;
+        background-color: #f0f0f0;
+
+    }
+}
