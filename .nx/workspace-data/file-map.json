@@ -1,0 +1,218 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.1.3",
+  "pathMappings": {
+    "@spartan-ng/helm/button": [
+      "./libs/ui/ui-button-helm/src/index.ts"
+    ],
+    "@spartan-ng/helm/input": [
+      "./libs/ui/ui-input-helm/src/index.ts"
+    ],
+    "@spartan-ng/helm/select": [
+      "./libs/ui/ui-select-helm/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "conectados-ao-frontend": [
+        {
+          "file": ".editorconfig",
+          "hash": "4165385352547808172"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "18168400278403753650"
+        },
+        {
+          "file": ".postcssrc.json",
+          "hash": "1757434806578486340"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "5331566439708925252"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "17038929134016848735"
+        },
+        {
+          "file": ".vscode/tasks.json",
+          "hash": "5336636969995539451"
+        },
+        {
+          "file": "README.md",
+          "hash": "14623989587223257262"
+        },
+        {
+          "file": "angular.json",
+          "hash": "679418009045976634"
+        },
+        {
+          "file": "components.json",
+          "hash": "3089158842223537119"
+        },
+        {
+          "file": "libs/ui/ui-button-helm/src/index.ts",
+          "hash": "17251273102492170138"
+        },
+        {
+          "file": "libs/ui/ui-button-helm/src/lib/hlm-button.directive.ts",
+          "hash": "11068329498313394712"
+        },
+        {
+          "file": "libs/ui/ui-button-helm/src/lib/hlm-button.token.ts",
+          "hash": "7896754714560199098"
+        },
+        {
+          "file": "libs/ui/ui-input-helm/src/index.ts",
+          "hash": "487913567356772959"
+        },
+        {
+          "file": "libs/ui/ui-input-helm/src/lib/hlm-input-error.directive.ts",
+          "hash": "13040471592513364896"
+        },
+        {
+          "file": "libs/ui/ui-input-helm/src/lib/hlm-input.directive.ts",
+          "hash": "737430795905127806"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/index.ts",
+          "hash": "14018309011524926443"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-content.directive.ts",
+          "hash": "13777679391543875655"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-group.directive.ts",
+          "hash": "10104144719712809790"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-label.directive.ts",
+          "hash": "2154633510682930564"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-option.component.ts",
+          "hash": "1267341982032635424"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-scroll-down.component.ts",
+          "hash": "1329657292567737568"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-scroll-up.component.ts",
+          "hash": "4220073209280768879"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-trigger.component.ts",
+          "hash": "13026213927425833268"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-value.directive.ts",
+          "hash": "10414791879790285753"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select.directive.ts",
+          "hash": "13558601816034201677"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "16474842246007085346"
+        },
+        {
+          "file": "package.json",
+          "hash": "14757793316287678165",
+          "deps": [
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@spartan-ng/cli",
+            "npm:@types/jasmine",
+            "npm:jasmine-core",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:tailwind-merge",
+            "npm:tailwindcss-animate",
+            "npm:typescript",
+            "npm:@angular/cdk",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@ng-icons/core",
+            "npm:@ng-icons/lucide",
+            "npm:@spartan-ng/brain",
+            "npm:@tailwindcss/postcss",
+            "npm:class-variance-authority",
+            "npm:clsx",
+            "npm:postcss",
+            "npm:rxjs",
+            "npm:tailwindcss",
+            "npm:tslib",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "public/favicon.ico",
+          "hash": "3988961587069885523"
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "7146212976712865685"
+        },
+        {
+          "file": "src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/app.component.spec.ts",
+          "hash": "16035901989898260246"
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "6859994115060547321"
+        },
+        {
+          "file": "src/app/app.config.ts",
+          "hash": "5028808807012428138"
+        },
+        {
+          "file": "src/app/app.routes.ts",
+          "hash": "12397496131277534773"
+        },
+        {
+          "file": "src/index.html",
+          "hash": "12159674454357708072"
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "4927504514031276065"
+        },
+        {
+          "file": "src/styles.scss",
+          "hash": "7707297478093954504"
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "17212958746959192557"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "3586016985072638847"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "8918301549046766373"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}
