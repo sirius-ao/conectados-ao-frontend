@@ -1,0 +1,19 @@
+:host {
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  main {
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+
+    aside{
+        display: block;
+        position: relative;
+    }
+  }
+}
