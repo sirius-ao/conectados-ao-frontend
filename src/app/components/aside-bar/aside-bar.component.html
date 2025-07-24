@@ -2,35 +2,24 @@
   <button class="" routerLink="archives/home"  routerLinkActive="router-link-active" (click)="changeAsideState()">
     <ng-icon
       hlm
-      name="lucideArchive"
-      strokeWidth="1.8px"
-      [color]="activeColor"
-    />
-    <p class="pButton">Archives</p>
+      name="lucideLayers"
+      strokeWidth="1px"
+      />
+      <!-- [color]="activeColor" -->
+    <p class="pButton">Candidatos</p>
   </button>
 
-  <button routerLink="graphics/home" routerLinkActive="router-link-active" >
-    <ng-icon hlm name="lucideChartBar" strokeWidth="1.8px" color="#404040" />
-    <p class="pButton">Graphics</p>
-  </button>
 
   <button>
-    <ng-icon hlm name="lucideSettings" strokeWidth="1.8px" color="#404040" />
+    <ng-icon hlm name="lucideSettings" strokeWidth="1px" color="#181818" />
     <p class="pButton">Settings</p>
-  </button>
-
-  <button>
-    <ng-icon hlm name="lucideChartBar" strokeWidth="1.8px" color="#404040" />
-    <p class="pButton">Graphics</p>
   </button>
 </div>
 
 <div class="subMenu" [ngClass]="asideState">
   <ul [ngClass]="" class="gap-3 flex flex-col pl-6 pt-8">
-    <li class="pButton cursor-pointer" routerLink="archives/home" routerLinkActive="subLinkActive">Archive Grap.</li>
-    <li class="pButton cursor-pointer" routerLink="archives/about" routerLinkActive="subLinkActive">Archive Settings</li>
-
-    <li class="pButton">Archive users</li>
-    <li class="pButton">Archive Menu</li>
+    <li class="pButton" routerLink="archives/home" routerLinkActive="subLinkActive">Dasboard</li>
+    <li class="pButton" routerLink="archives/detalhes" routerLinkActive="subLinkActive">Registrar</li>
+    <li class="pButton" routerLink="archives/about" routerLinkActive="subLinkActive">Listar</li>
   </ul>
 </div>

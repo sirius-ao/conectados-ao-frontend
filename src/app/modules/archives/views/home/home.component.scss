@@ -1,0 +1,32 @@
+:host{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 180px 1fr;
+    
+    .container-header{
+        background-color: #0f6fdd;
+    }
+
+    .main{
+        margin-top: -52px;
+        padding: 40px;
+
+        .container-card{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr ));
+            height: 100%;
+            gap: 16px;
+            justify-content: space-between;
+            // background-color: red;
+
+            .card{
+                height: 160px;
+                border-radius: 4px;
+                background-color: #FFF;
+                box-shadow: 0 0 5px #00000016;
+                // border: 1px solid #ddd;
+            }
+        }
+    }
+}

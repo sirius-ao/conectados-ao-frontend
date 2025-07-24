@@ -3,7 +3,7 @@ import { ControllerAsideBarStateService } from '../../services/controller-aside-
 import { CommonModule } from '@angular/common';
 import { HlmIconDirective } from "../../../../libs/ui/ui-icon-helm/src/lib/hlm-icon.directive";
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import { lucideArchive, lucideChartBar, lucideSettings } from '@ng-icons/lucide';
+import { lucideArchive, lucideChartBar, lucideSettings, lucideLayers } from '@ng-icons/lucide';
 import { hlmP, hlmUl } from '@spartan-ng/helm/typography';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -12,7 +12,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   imports: [CommonModule, HlmIconDirective, NgIcon, RouterLinkActive, RouterLink],
   templateUrl: './aside-bar.component.html',
   styleUrl: './aside-bar.component.scss',
-  providers: [provideIcons({lucideArchive, lucideChartBar, lucideSettings})]
+  providers: [provideIcons({lucideArchive, lucideChartBar, lucideSettings, lucideLayers})]
 })
 export class AsideBarComponent implements OnInit {
   protected hlmP = hlmP
