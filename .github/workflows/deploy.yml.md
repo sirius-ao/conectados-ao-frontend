@@ -28,9 +28,9 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@v4
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        #server: ${{ secrets.FTP_SERVER }}
+        #username: ${{ secrets.FTP_USERNAME }}
+        #password: ${{ secrets.FTP_PASSWORD }}
         local-dir: dist/your-project-name/  # Substitua 'your-project-name' pelo nome do seu projeto Angular
         server-dir: /public_html/  # Altere para o diretório de destino no servidor
         exclude: |
