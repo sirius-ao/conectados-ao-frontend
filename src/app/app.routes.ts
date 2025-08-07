@@ -12,6 +12,7 @@ export const routes: Routes = [
     redirectTo: '/archives/home',
     pathMatch: 'full'
   },
+  
   {
     path: 'archives',
     component: ArchivesComponent,
