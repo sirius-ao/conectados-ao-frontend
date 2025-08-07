@@ -1,25 +1,14 @@
 <div class="menu">
-  <button class="" routerLink="archives/home"  routerLinkActive="router-link-active" (click)="changeAsideState()">
-    <ng-icon
-      hlm
-      name="lucideLayers"
-      strokeWidth="1px"
-      />
-      <!-- [color]="activeColor" -->
-    <p class="pButton">Candidatos</p>
-  </button>
+  <app-aside-bar-tab (exposeSubMenu)="getActiveSubMenu($event)" label="Layers" route="archives/" lucideIcon="lucideLayers" [menu]="subMenuData.layersMenu"/>
+  <app-aside-bar-tab label="Configs" route="settngs" lucideIcon="lucideSettings"/>
+  <app-aside-bar-tab (exposeSubMenu)="getActiveSubMenu($event)" label="graphic" route="graphic/" lucideIcon="lucideChartBar" [menu]="subMenuData.graphicsMenu"/>
 
-
-  <button>
-    <ng-icon hlm name="lucideSettings" strokeWidth="1px" color="#181818" />
-    <p class="pButton">Settings</p>
-  </button>
 </div>
 
 <div class="subMenu" [ngClass]="asideState">
-  <ul [ngClass]="" class="gap-3 flex flex-col pl-6 pt-8">
-    <li class="pButton" routerLink="archives/home" routerLinkActive="subLinkActive">Dasboard</li>
-    <li class="pButton" routerLink="archives/detalhes" routerLinkActive="subLinkActive">Registrar</li>
-    <li class="pButton" routerLink="archives/about" routerLinkActive="subLinkActive">Listar</li>
+  <ul class="gap-3 flex flex-col pl-6 pt-8">
+    @for (item of activeSubMenu; track $index) {
+      <li class="pButton" [routerLink]="item.route" routerLinkActive="subLinkActive">{{item.label}}</li>
+    }
   </ul>
 </div>

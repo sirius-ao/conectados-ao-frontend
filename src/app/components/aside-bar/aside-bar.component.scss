@@ -18,63 +18,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // gap: 24px;
-
     position: absolute;
     z-index: 10;
-
-    .router-link-active {
-      // color: #004ba1;
-
-      &::after {
-        position: absolute;
-        content: "";
-        height: 80%;
-        width: 3px;
-        border-radius: 80px;
-        left: 0;
-        top: 8px;
-        bottom: 0;
-        background-color: #0f6fdd;
-      }
-    }
-
-    button {
-      position: relative;
-      width: 100%;
-      border-bottom: 1px solid #ddd;
-      padding: 24px 8px 8px 8px;
-      cursor: pointer;
-      // background-color: red;
-
-      &:hover {
-        .pButton {
-          color: #004ba1;
-        }
-      }
-
-      &:active{
-        opacity: .8;
-      }
-
-      .pButton {
-        letter-spacing: 0.5px;
-        font-size: 14px;
-        font-weight: 100;
-        color: #404040;
-      }
-    }
   }
 
   .subMenu {
     background-color: #fff;
     border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
-
     height: 100%;
-    width: 200px;
     padding: 24px;
-
+    z-index: 11;
     transition: all 0.3s ease-out;
     position: absolute;
 
@@ -88,7 +42,7 @@
         font-weight: 400;
 
         &:hover {
-          color: #0f6fdd;
+          color: var(--main-color);
         }
 
         &:active{
@@ -97,14 +51,14 @@
       }
 
       .subLinkActive {
-        color: #0f6fdd;
+        color: var(--main-color);
         position: relative;
 
         &::after {
           content: "";
           width: 6px;
           height: 6px;
-          background-color: #0f6fdd;
+          background-color: var(--main-color);
           position: absolute;
           left: -16px;
           bottom: 6px;
@@ -115,14 +69,13 @@
   }
 
   .showSubMenu {
-    left: 96px;
-    z-index: 5;
+    left: 120px;
+    width: 200px;
     opacity: 1;
   }
-
+      
   .hideSubMenu {
-    opacity: 0;
-    left: 80px;
-    pointer-events: none;
+   left: 20px;
+   opacity: 0;
   }
 }

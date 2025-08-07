@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
-import { ArchivesComponent } from './modules/archives/archives.component';
-import { DetalhesComponent } from './modules/archives/views/detalhes/detalhes.component';
-import { HomeComponent } from './modules/archives/views/home/home.component'
+import { ArchivesComponent } from './modules/candidatos/archives.component';
+import { DetalhesComponent } from './modules/candidatos/views/detalhes/detalhes.component';
+import { HomeComponent } from './modules/candidatos/views/home/home.component'
+import { ListarComponent } from './modules/candidatos/views/listar/listar.component';
+import { RegistrarComponent } from './modules/candidatos/views/registrar/registrar.component';
 
 
 export const routes: Routes = [
@@ -11,7 +13,8 @@ export const routes: Routes = [
     children: [
       {path: '', redirectTo: 'archives/home', pathMatch: 'full'},
       { path: 'home', component: HomeComponent },
-      { path: 'detalhes', component: DetalhesComponent },
+      { path: 'listar', component: ListarComponent },
+      { path: 'registrar', component: RegistrarComponent },
     ],
   },
  
