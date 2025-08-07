@@ -8,6 +8,11 @@ import { RegistrarComponent } from './modules/candidatos/views/registrar/registr
 
 export const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/archives/home',
+    pathMatch: 'full'
+  },
+  {
     path: 'archives',
     component: ArchivesComponent,
     children: [
