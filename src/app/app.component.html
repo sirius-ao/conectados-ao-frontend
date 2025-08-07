@@ -1,11 +1,24 @@
+
+
+<aside [ngClass]="asideState != 'showSubMenu' ? 'showAside' : 'hideAside' ">
+	<div class="header-aside">
+		<button
+			hlmBtn
+			variant="ghost"
+			class="cursor-pointer"
+			(click)="changeAsideState()"
+		>
+			<ng-icon hlm name="lucideChevronsLeft" strokeWidth="1.8px" color="#404040" />
+		</button>
+	</div>
+
+	<app-aside-bar /> 
+</aside>
+
+<main >
 <app-top-bar />
-
-<main>
-    <aside>
-        <app-aside-bar />
-    </aside>
-
-    <div>
-        <router-outlet />
-    </div>
+<section>
+<router-outlet />
+</section>
 </main>
+

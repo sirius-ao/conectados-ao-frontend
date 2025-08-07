@@ -9,6 +9,7 @@ export class ControllerAsideBarStateService {
   private controllerState:boolean = false
 
   hasClink(){
+    
     this.controllerAsideBarState.emit(!this.controllerState)
     this.controllerState = !this.controllerState
   }

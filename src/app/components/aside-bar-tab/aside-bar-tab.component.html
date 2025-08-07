@@ -1,0 +1,11 @@
+  <button class="" [routerLink]="route"  routerLinkActive="router-link-active" (click)="changeAsideState()">
+    <ng-icon
+      hlm
+      [name]="lucideIcon"
+      strokeWidth="1.2px"
+      />
+
+      <p>
+        {{asideState === 'showSubMenu' ?  label : '...' }}
+      </p>
+  </button>

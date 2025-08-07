@@ -1,0 +1,22 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+
+    label{
+        letter-spacing: .5;
+        color: #404040;
+    }
+
+    input{
+        border: 1px solid #ddd;
+        height: 48px;
+        border-radius: 4px;
+        padding-left: 16px;
+
+        &::placeholder{
+            color: #808080;
+        }
+    }
+}

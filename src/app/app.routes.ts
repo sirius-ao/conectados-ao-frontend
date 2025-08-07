@@ -1,28 +1,21 @@
 import { Routes } from '@angular/router';
-import { ArchivesComponent } from './modules/archives/archives.component';
-import { DetalhesComponent } from './modules/archives/views/detalhes/detalhes.component';
-import { GraphicsComponent } from './modules/graphics/graphics.component';
-import { HomeComponent } from './modules/archives/views/home/home.component'
+import { ArchivesComponent } from './modules/candidatos/archives.component';
+import { DetalhesComponent } from './modules/candidatos/views/detalhes/detalhes.component';
+import { HomeComponent } from './modules/candidatos/views/home/home.component'
+import { ListarComponent } from './modules/candidatos/views/listar/listar.component';
+import { RegistrarComponent } from './modules/candidatos/views/registrar/registrar.component';
 
-import {AboutComponentGrapic} from "./modules/graphics/views/about/about.component"
-import {HomeComponentGrapic} from "./modules/graphics/views/home/home.component"
 
 export const routes: Routes = [
   {
     path: 'archives',
     component: ArchivesComponent,
     children: [
+      {path: '', redirectTo: 'archives/home', pathMatch: 'full'},
       { path: 'home', component: HomeComponent },
-      { path: 'about', component: DetalhesComponent },
-      {path: '', redirectTo: 'home', pathMatch: 'full'}
+      { path: 'listar', component: ListarComponent },
+      { path: 'registrar', component: RegistrarComponent },
     ],
   },
-  {
-    path: 'graphics',
-    component: GraphicsComponent,
-    children: [
-      {path: 'home', component: HomeComponentGrapic},
-      {path: 'about', component: HomeComponentGrapic}
-    ]
-  }
+ 
 ];

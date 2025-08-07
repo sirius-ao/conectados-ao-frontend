@@ -3,35 +3,61 @@ import { ControllerAsideBarStateService } from '../../services/controller-aside-
 import { CommonModule } from '@angular/common';
 import { HlmIconDirective } from "../../../../libs/ui/ui-icon-helm/src/lib/hlm-icon.directive";
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import { lucideArchive, lucideChartBar, lucideSettings } from '@ng-icons/lucide';
+import { lucideArchive, lucideChartBar, lucideSettings, lucideLayers } from '@ng-icons/lucide';
 import { hlmP, hlmUl } from '@spartan-ng/helm/typography';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { AsideBarTabComponent } from "../aside-bar-tab/aside-bar-tab.component";
+import { event } from 'jquery';
 
 @Component({
   selector: 'app-aside-bar',
-  imports: [CommonModule, HlmIconDirective, NgIcon, RouterLinkActive, RouterLink],
+  imports: [CommonModule, RouterLinkActive, RouterLink, AsideBarTabComponent],
   templateUrl: './aside-bar.component.html',
   styleUrl: './aside-bar.component.scss',
-  providers: [provideIcons({lucideArchive, lucideChartBar, lucideSettings})]
+  providers: [provideIcons({lucideArchive, lucideChartBar, lucideSettings, lucideLayers})]
 })
 export class AsideBarComponent implements OnInit {
   protected hlmP = hlmP
   protected hlmUl = hlmUl
-  protected activeColor:string = '#0f6fdd'
+  protected activeColor:string = '#b62b01ec'
+
+  //Lista de submenus 
+  protected subMenuData = {
+    layersMenu: [ 
+      {label: 'Dashboard', route: 'archives/home'}, 
+      {label: 'Registro', route: 'archives/registrar'}, 
+      {label: 'List', route: 'archives/listar'} 
+    ],
+     graphicsMenu: [ 
+      {label: 'Dashboard', route: 'graphics/home'}, 
+      {label: 'Registro', route: 'graphics/registrar'}, 
+      {label: 'List', route: 'graphics/listar'} 
+    ]
+  }
+
+  //Recebe a lista dos submenus ativos
+  protected activeSubMenu:{label:string, route:string}[] = this.subMenuData.layersMenu
 
   constructor(
-    private _ControllerAsideBarState: ControllerAsideBarStateService
+    protected _ControllerAsideBarState: ControllerAsideBarStateService
   ) {}
 
   protected asideState: 'showSubMenu' | 'hideSubMenu' = 'hideSubMenu';
+  menus: {label:string, route:string}[] = [{label: '', route: ''}] 
 
-  changeAsideState(){
-    this._ControllerAsideBarState.hasClink()
+  getActiveSubMenu(data:[]){
+    this.activeSubMenu = data
   }
 
   ngOnInit() {
     this._ControllerAsideBarState.controllerAsideBarState.subscribe((data) => {
-      this.asideState = data ? 'showSubMenu' : 'hideSubMenu';
+      this.asideState = !data ?  'showSubMenu':'hideSubMenu';
     });
   }
+
+  //muda o estado do asidebar
+  changeAsideState(){
+    this._ControllerAsideBarState.hasClink()
+  }
+
 }
