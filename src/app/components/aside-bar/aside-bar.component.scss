@@ -18,60 +18,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-
     position: absolute;
     z-index: 10;
-
-    .router-link-active {
-      color: #004ba1;
-
-      &::after {
-        position: absolute;
-        content: "";
-        height: 72%;
-        width: 6px;
-        border-radius: 0 50px 50px 0;
-        left: 0;
-        top: 8px;
-        bottom: 0;
-        background-color: #0f6fdd;
-      }
-    }
-
-    button {
-      position: relative;
-      width: 100%;
-      border-bottom: 1px solid #ddd;
-      padding: 16px 0;
-      cursor: pointer;
-
-      &:hover {
-        .pButton {
-          color: #004ba1;
-        }
-      }
-
-      &:active{
-        opacity: .8;
-      }
-
-      .pButton {
-        letter-spacing: 0.5px;
-        font-size: 14px;
-      }
-    }
   }
 
   .subMenu {
     background-color: #fff;
     border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
-
     height: 100%;
-    width: 200px;
     padding: 24px;
-
+    z-index: 11;
     transition: all 0.3s ease-out;
     position: absolute;
 
@@ -81,9 +38,11 @@
       .pButton {
         cursor: pointer;
         transition: all .2s ease;
+        font-size: 14px;
+        font-weight: 400;
 
         &:hover {
-          color: #0f6fdd;
+          color: var(--main-color);
         }
 
         &:active{
@@ -92,14 +51,14 @@
       }
 
       .subLinkActive {
-        color: #0f6fdd;
+        color: var(--main-color);
         position: relative;
 
         &::after {
           content: "";
           width: 6px;
           height: 6px;
-          background-color: #0f6fdd;
+          background-color: var(--main-color);
           position: absolute;
           left: -16px;
           bottom: 6px;
@@ -111,13 +70,12 @@
 
   .showSubMenu {
     left: 120px;
-    z-index: 5;
+    width: 200px;
     opacity: 1;
   }
-
+      
   .hideSubMenu {
-    opacity: 0;
-    left: 80px;
-    pointer-events: none;
+   left: 20px;
+   opacity: 0;
   }
 }
