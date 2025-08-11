@@ -13,7 +13,7 @@
 
     width: 100%;
     height: 100%;
-    padding: 24px 0;
+    padding: 48px 0;
 
     display: flex;
     flex-direction: column;
@@ -23,11 +23,11 @@
   }
 
   .subMenu {
-    background-color: #fff;
+    background-color: #FFF;
     border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
     height: 100%;
-    padding: 24px;
+    padding: 52px 0 0 40px;
     z-index: 11;
     transition: all 0.3s ease-out;
     position: absolute;
@@ -70,12 +70,13 @@
 
   .showSubMenu {
     left: 120px;
-    width: 200px;
+    width: 180px;
     opacity: 1;
   }
       
   .hideSubMenu {
    left: 20px;
    opacity: 0;
+   pointer-events: none;
   }
 }
