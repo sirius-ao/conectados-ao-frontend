@@ -32,6 +32,8 @@ export class AsideBarComponent implements OnInit {
      graphicsMenu: [ 
       {label: 'Dashboard', route: 'graphics/dashboard'}, 
       {label: 'Details', route: 'graphics/detalhes'}, 
+      {label: 'Config', route: 'graphics/configs'}, 
+
     ]
   }
 

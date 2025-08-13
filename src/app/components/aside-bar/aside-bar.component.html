@@ -1,7 +1,7 @@
 <div class="menu">
   <app-aside-bar-tab (exposeSubMenu)="getActiveSubMenu($event)" label="Layers" route="archives/" lucideIcon="lucideLayers" [menu]="subMenuData.layersMenu"/>
   <app-aside-bar-tab (exposeSubMenu)="getActiveSubMenu($event)" label="graphic" route="graphics/" lucideIcon="lucideChartBar" [menu]="subMenuData.graphicsMenu"/>
-  <app-aside-bar-tab label="Configs" route="settngs" lucideIcon="lucideSettings"/>
+  <app-aside-bar-tab label="Configs" route="settngs" lucideIcon="lucideSettings" />
 </div>
 
 <div class="subMenu" [ngClass]="asideState">
