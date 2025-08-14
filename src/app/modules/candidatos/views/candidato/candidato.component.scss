@@ -1,13 +1,13 @@
+
 .container{
     background-color: transparent;
     display: grid;
     grid-template-columns: 1fr 400px;
     padding: 0;
 
-  
 
     .container-info{ 
-        background-color: #FFF;
+        background-color: var(--container-color);
         padding: 40px;
         border-radius: 4px;
         box-shadow: 0px 0px 5px #00000010;
@@ -19,6 +19,7 @@
         letter-spacing: 1px;
         font-size: 20px;
         margin-bottom: 24px;
+        color: var(--text-color);
     }
         .container-all-inputs{
             display: grid;
@@ -30,7 +31,7 @@
     }
     
     .container-perfil{
-        background-color: #FFF;
+        background-color: var(--container-color);
         padding: 44px;
         border-radius: 4px;
         box-shadow: 0px 0px 5px #00000010;
@@ -39,6 +40,9 @@
         align-items: center;
         gap: 16px;
         padding-top: 24px;
+                color: var(--text-color);
+
+        
 
                  h2{
         font-size: 32px;

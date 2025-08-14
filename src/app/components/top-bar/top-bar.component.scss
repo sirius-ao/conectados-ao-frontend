@@ -9,7 +9,8 @@
 
     box-sizing: border-box;
     z-index: 100;
-    background-color: #FFF;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 
     .container-icon{
         align-items: center;
@@ -19,7 +20,7 @@
         display: flex;
         gap: 16px;
         align-items: center;
-        border-left: 1px solid #d3d3d3;
+        border-left: 1px solid var(--border-color);
         padding: 0 24px;
     }
 
@@ -30,15 +31,14 @@
 
         outline: none;
         border: none;
-        background-color: #f0f0f0;
-
     }
 
     .nome{
         font-size: 14px;
+        color: var(--text-color);
     }
     .admin{
         font-size: 12px;
-        color: #404040;
+        color: var(--text-color);
     }
 }
