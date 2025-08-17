@@ -1,0 +1,19 @@
+:host{
+    display: flex;
+    background-color: var(--main-color);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 210px;
+
+    .title{
+        color: #f4f4f4;
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .subtitle{
+        color: #f4f4f4dc;
+    }
+}

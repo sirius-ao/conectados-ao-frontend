@@ -26,12 +26,14 @@ export class AsideBarComponent implements OnInit {
     layersMenu: [ 
       {label: 'Dashboard', route: 'archives/home'}, 
       {label: 'Registro', route: 'archives/registrar'}, 
-      {label: 'List', route: 'archives/listar'} 
+      {label: 'List', route: 'archives/listar'},
+      {label: 'Candidato', route: 'archives/candidato'}
     ],
      graphicsMenu: [ 
-      {label: 'Dashboard', route: 'graphics/home'}, 
-      {label: 'Registro', route: 'graphics/registrar'}, 
-      {label: 'List', route: 'graphics/listar'} 
+      {label: 'Dashboard', route: 'graphics/dashboard'}, 
+      {label: 'Details', route: 'graphics/detalhes'}, 
+      {label: 'Config', route: 'graphics/configs'}, 
+
     ]
   }
 

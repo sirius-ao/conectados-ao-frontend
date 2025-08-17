@@ -1,27 +1,10 @@
-<div class="container-header">
-  <p class="title">Dashboard</p>
-  <p class="subtitle">Conectados</p>
-</div>
+<app-header-main />
 
-
-<div class="main">
-
+<div class="container">
   <div class="header">
     <h2>Registrar Candidato</h2>
     <p>Preencha todos os campos!</p>
   </div>
    
-  <form action="">
-    <app-input-with-label placeholder="Digite seu nome" label="Nome Completo*"/>
-    <app-input-with-label placeholder="Digite o nome do pai" label="Nome do Pai*"/>
-    <app-input-with-label placeholder="Digite o nome da mãe" label="Nome da Mãe*"/>
-    <app-select-with-label label="País*" placeholder="Clique para Selecionar "/>
-    <app-select-with-label label="Província*" placeholder="Clique para Selecionar "/>
-    <app-select-with-label label="Município*" placeholder="Clique para Selecionar "/>
-    <app-select-with-label label="Genero*" placeholder="Clique para Selecionar "/>
-    <app-input-with-label placeholder="" label="Genero*"/>
-
-
-  </form>
-  <button>Enviar</button>
+  <app-stepper />
 </div>

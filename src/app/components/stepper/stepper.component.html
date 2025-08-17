@@ -1,0 +1,56 @@
+<mat-stepper #stepper >
+  <mat-step [stepControl]="firstFormGroup" state="chat">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Dados pessoais</ng-template>
+      
+      <div class="container-inputs">
+        <app-input-with-label placeholder="Digite seu nome" label="Nome Completo*"/>
+        <app-input-with-label placeholder="Digite o nome do pai" label="Nome do Pai*"/>
+        <app-input-with-label placeholder="Digite o nome da mãe" label="Nome da Mãe*"/>
+        <app-select-with-label label="País*" placeholder="Clique para Selecionar "/>
+        <app-select-with-label label="Província*" placeholder="Clique para Selecionar "/>
+        <app-select-with-label label="Município*" placeholder="Clique para Selecionar "/>
+      </div>
+
+      <div>
+        <button matButton matStepperNext (click)="nextStep()">Next</button>
+      </div>
+    </form>
+  </mat-step>
+      
+  <mat-step [stepControl]="secondFormGroup" >
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Contactos</ng-template>
+      
+      <div class="container-inputs">
+        <app-input-with-label placeholder="" label="Genero*"/> 
+        <app-input-with-label placeholder="Digite o nome da mãe" label="Nome da Mãe*"/>
+        <app-select-with-label label="País*" placeholder="Clique para Selecionar "/>
+        <app-select-with-label label="Município*" placeholder="Clique para Selecionar "/>
+        <app-select-with-label label="Genero*" placeholder="Clique para Selecionar "/>
+      </div>
+
+      <div>
+        <button matButton matStepperPrevious (click)="nextStep()">Back</button>
+        <button matButton matStepperNext (click)="nextStep()">Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+    <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        <p>You are now done.</p>
+    <div>
+        <button matButton matStepperPrevious (click)="nextStep()">Back</button>
+        <button matButton (click)="stepper.reset()">Reset</button>
+    </div>
+    </mat-step>
+</mat-stepper>
+
+
+<div class="loading-modal" [ngClass]="stepIsLoading() ? 'show-loading' : '' ">
+</div>
+
+
+
+
