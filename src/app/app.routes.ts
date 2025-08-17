@@ -7,6 +7,8 @@ import { RegistrarComponent } from './modules/candidatos/views/registrar/registr
 import { GraphicComponent } from './components/graphic/graphic.component';
 import { GraphicsDashboardComponent } from './modules/graphics/views/graphics-dashboard/graphics-dashboard.component';
 import { GraphicsComponent } from './modules/graphics/graphics.component';
+import { CandidatoComponent } from './modules/candidatos/views/candidato/candidato.component';
+import { AdminConfigsComponent } from './modules/admin-configs/admin-configs.component';
 
 
 export const routes: Routes = [
@@ -24,6 +26,7 @@ export const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'listar', component: ListarComponent },
       { path: 'registrar', component: RegistrarComponent },
+      { path: 'candidato', component: CandidatoComponent }
     ],
   },
 
@@ -33,7 +36,9 @@ export const routes: Routes = [
     children: [
       {path: '', redirectTo: '/graphics/dashboard', pathMatch: 'full'},
       {path: 'dashboard', component: GraphicsDashboardComponent},
-      {path: 'detalhes', component: GraphicsDashboardComponent}
+      {path: 'detalhes', component: GraphicsDashboardComponent},
+      {path: 'configs', component: AdminConfigsComponent}
+
     ]
   }
  

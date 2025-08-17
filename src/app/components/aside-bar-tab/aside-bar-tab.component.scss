@@ -1,7 +1,7 @@
 :host{
     display: flex;
     width: 100%;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
 }
 
 button {
@@ -16,11 +16,11 @@ button {
     transition: all .2s;
     cursor: pointer;
     &:hover {
-    background-color: #F4F4F4;
 
     .pButton {
         color: var(--main-color);
     }
+
     }
 
     &:active{
@@ -28,10 +28,10 @@ button {
     }
 
     .pButton {
-    letter-spacing: 0.5px;
-    font-size: 14px;
-    font-weight: 100;
-    color: #404040;
+        letter-spacing: 0.5px;
+        font-size: 14px;
+        font-weight: 100;
+        color: var(--text-color);
     }
 }
 

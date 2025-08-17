@@ -11,20 +11,24 @@
 }
 
 table{
-  background-color: #FFF;
+  background-color: var(--bg-card);
   
   th{
     font-weight: 700;
     font-size: 15px;
-    color: #181818;
+    color: var(--text-color);
   }
   
   td{
-    border-bottom: 1px solid #DDD;
+    border-bottom: 1px solid var(--border-color);
     padding: 16px;
+    color: var(--text-color);
+
   }
 }
 
 mat-paginator{
-  background-color: #FFFFFF;
+  background-color:var(--bg-card);
+      color: var(--text-color);
+
 }

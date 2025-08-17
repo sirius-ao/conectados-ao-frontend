@@ -9,6 +9,7 @@ import { NgIcon, provideIcons } from '@ng-icons/core';
 import { HlmButtonDirective } from '@spartan-ng/helm/button';
 import { ControllerAsideBarStateService } from './services/controller-aside-bar-state.service';
 import { CommonModule } from '@angular/common';
+import { AdminService } from './services/admin.service';
 
 
 @Component({
@@ -24,13 +25,14 @@ AppComponent {
   title = 'conectados-ao-frontend';
   protected asideState: 'showSubMenu' | 'hideSubMenu' = 'hideSubMenu';
 
-   constructor(protected _ControllerAsideBarState: ControllerAsideBarStateService) {}
+   constructor(protected _ControllerAsideBarState: ControllerAsideBarStateService, private _adminService: AdminService) {}
   
     protected changeAsideState(){
       this._ControllerAsideBarState.hasClink()
     }
 
       ngOnInit() {
+        this._adminService.loadSavedColor();
     this._ControllerAsideBarState.controllerAsideBarState.subscribe((data) => {
       this.asideState = data ?  'showSubMenu':'hideSubMenu';
     });

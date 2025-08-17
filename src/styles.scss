@@ -27,11 +27,29 @@ html {
 
 :root {
   --font-sans: "";
-  --main-color: #b62b01
+  --main-color: #b62b01;
+  --bg-color: #fff;
+  --text-color: #181818;
+  --border-color: #ddd;
+  --bg-section-color: #f0f0f0;
+}
+
+.dark-theme {
+  --bg-color: #181818;
+  --text-color: #f4f4f4;
+  --border-color: #404040;
+  --bg-section-color: #242424;
+  --bg-card: #303030;
+  --label-color: #ddd;
+  --container-color: #303030;
+}
+
+body{
+  background-color: red;
 }
 
 .container{
-  background-color: #FFF;
+  background-color: var(--container-color);
   padding: 48px;
   margin: -48px auto 0 auto;
   display: flex;

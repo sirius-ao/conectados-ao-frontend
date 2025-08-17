@@ -11,7 +11,6 @@
     grid-template-rows: 58px 1fr;
     position: relative;
     display: grid;
-    background-color: black;
     z-index: 10;
     width: 100%;
     
@@ -32,8 +31,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-color);
 
-     .subMenu{
+    .subMenu{
       width: 180px;
       height: 100%;
       // position: fixed;
@@ -44,7 +44,7 @@
     }
 
     .header-aside{
-      background-color: #fff;
+      background-color: inherit;
       height: 58px;
       width: 100%;
       display: flex;
