@@ -1,5 +1,5 @@
 [phases.build]
-nixPkgs = ["nodejs-20_x"]  # Explicitly request Node.js 20
+nixPkgs = ["nodejs_20"]  # Correct package name in Nixpkgs
 
 [build]
-nixpkgsArchive = "https://github.com/NixOS/nixpkgs/archive/nixos-23.11.tar.gz"  # Use a newer Nixpkgs
+nixpkgsArchive = "https://github.com/NixOS/nixpkgs/archive/nixos-23.11.tar.gz"  # Stable release with Node.js 20
