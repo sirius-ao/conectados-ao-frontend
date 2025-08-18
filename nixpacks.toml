@@ -2,5 +2,4 @@
 
 with pkgs; [
   nodejs_20  # Note the underscore, not hyphen
-  # Other dependencies...
 ]
