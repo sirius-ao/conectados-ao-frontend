@@ -1,5 +1,6 @@
-[phases.build]
-nixPkgs = ["nodejs_20"]  # Correct package name in Nixpkgs
+{ pkgs ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixos-23.11.tar.gz") {} }:
 
-[build]
-nixpkgsArchive = "https://github.com/NixOS/nixpkgs/archive/nixos-23.11.tar.gz"  # Stable release with Node.js 20
+with pkgs; [
+  nodejs_20  # Note the underscore, not hyphen
+  # Other dependencies...
+]
