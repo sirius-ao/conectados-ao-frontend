@@ -4,10 +4,11 @@
     display: grid;
     grid-template-columns: 1fr 400px;
     padding: 0;
+    // background-color: var(--bg-color);
 
 
     .container-info{ 
-        background-color: var(--container-color);
+    background-color: var(--bg-color);
         padding: 40px;
         border-radius: 4px;
         box-shadow: 0px 0px 5px #00000010;
@@ -31,7 +32,7 @@
     }
     
     .container-perfil{
-        background-color: var(--container-color);
+    background-color: var(--bg-color);
         padding: 44px;
         border-radius: 4px;
         box-shadow: 0px 0px 5px #00000010;
