@@ -30,6 +30,6 @@ export class AsideBarTabComponent implements OnInit {
 
   protected changeAsideState() {
     this.exposeSubMenu.emit(this.menu);
-    // this._ControllerAsideBarState.hasClink();
+    this._ControllerAsideBarState.hasClink(false);
   }
 }
