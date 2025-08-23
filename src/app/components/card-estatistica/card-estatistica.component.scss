@@ -2,11 +2,10 @@
     padding: 24px;
     height: 160px;
     border-radius: 2px;
-    background-color: var(--bg-card);
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // box-shadow: 0 0 4px #00000024;
 
     .badge{
         display: flex;

@@ -59,7 +59,7 @@ export class AsideBarComponent implements OnInit {
 
   //muda o estado do asidebar
   changeAsideState(){
-    this._ControllerAsideBarState.hasClink()
+    this._ControllerAsideBarState.hasClink(false)
   }
 
 }

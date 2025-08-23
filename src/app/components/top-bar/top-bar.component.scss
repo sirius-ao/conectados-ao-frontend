@@ -12,6 +12,17 @@
     color: var(--text-color);
     background-color: var(--bg-color);
 
+    button{
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        // background-color: red;
+        justify-content: center;
+
+    }
+
     .container-icon{
         align-items: center;
     }

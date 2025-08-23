@@ -28,7 +28,7 @@ AppComponent {
    constructor(protected _ControllerAsideBarState: ControllerAsideBarStateService, private _adminService: AdminService) {}
   
     protected changeAsideState(){
-      this._ControllerAsideBarState.hasClink()
+      this._ControllerAsideBarState.hasClink(false)
     }
 
       ngOnInit() {
