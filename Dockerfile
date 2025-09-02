@@ -1,10 +1,22 @@
-FROM node:20-alpine AS build 
+FROM node:20-alpine AS builder
 
 WORKDIR /app
+
 COPY package*.json ./
+COPY angular.json ./
+COPY tsconfig*.json ./
+
 RUN npm ci
-COPY . .
-RUN npm run build
+
+COPY src ./src
+COPY public ./public
+COPY assets ./assets
+
+RUN npm run build -- --configuration=production
 
 FROM nginx:alpine
-COPY --from=build /app/dist/conectados-ao-frontend/browser /usr/share/nginx/html
+
+COPY --from=builder /app/dist/conectados-ao-frontend/browser /usr/share/nginx/html
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

@@ -19,3 +19,15 @@ git branch -M main
 git push -u origin main
 
 > https://github.com/marketplace/actions/ftp-deploy
+
+
+FROM node:20-alpine AS build 
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+FROM nginx:alpine
+COPY --from=build /app/dist/conectados-ao-frontend/browser /usr/share/nginx/html
