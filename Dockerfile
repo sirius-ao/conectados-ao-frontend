@@ -10,7 +10,6 @@ RUN npm ci
 
 COPY src ./src
 COPY public ./public
-COPY assets ./assets
 
 RUN npm run build -- --configuration=production
 
