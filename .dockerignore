@@ -1,0 +1,117 @@
+# Docker ignore file for Angular project
+
+# Git
+.git
+.gitignore
+.gitattributes
+.github/
+.gitlab-ci.yml
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Angular specific
+/dist
+/tmp
+/out-tsc
+/.angular
+/cache
+
+# Build artifacts
+build/
+*.tgz
+*.tar.gz
+
+# Environment files (except production)
+.env
+.env.local
+.env.dev
+.env.test
+!.env.prod.example
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage reports
+coverage/
+*.lcov
+.nyc_output
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Documentation
+/docs
+/readme.md
+/LICENSE
+/CHANGELOG.md
+
+# Configuration files (except what's needed)
+/*.config.js
+/*.config.ts
+/tsconfig.json
+/tsconfig.app.json
+/tsconfig.spec.json
+/tsconfig.editor.json
+/tslint.json
+/karma.conf.js
+/protractor.conf.js
+
+# Source maps
+*.js.map
+*.css.map
+
+# Temporary files
+tmp/
+temp/
+
+# Docker files (except Dockerfile)
+.dockerignore
+docker-compose.yml
+docker-compose.*.yml
+
+# Nixpacks
+.nixpacks/
+
+# Optional files
+/cypress
+/e2e
+/mock-data
+
+# Keep these for Docker build
+!package.json
+!package-lock.json
+!angular.json
+!Dockerfile
+!.dockerignore
+!nginx.conf
+!nginx/
