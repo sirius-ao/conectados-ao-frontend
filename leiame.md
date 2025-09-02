@@ -31,3 +31,13 @@ RUN npm run build
 
 FROM nginx:alpine
 COPY --from=build /app/dist/conectados-ao-frontend/browser /usr/share/nginx/html
+
+
+    "@spartan-ng/helm-button": "latest",
+    "@spartan-ng/helm-icon": "latest", 
+    "@spartan-ng/helm-typography": "latest",
+    "@angular/core": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    
+    "@angular/core": "^20.1.3",
+    "@angular/compiler": "^20.1.3",
