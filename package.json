@@ -10,9 +10,9 @@
   },
   "private": true,
   "dependencies": {
-    "@spartan-ng/helm-button": "latest",
-    "@spartan-ng/helm-icon": "latest", 
-    "@spartan-ng/helm-typography": "latest",
+    "@spartan-ng/helm/button": "latest",
+    "@spartan-ng/helm/icon": "latest", 
+    "@spartan-ng/helm/typography": "latest",
     "@angular/core": "^17.0.0",
     "@angular/compiler": "^17.0.0",
     "@angular/cdk": "^20.1.3",
